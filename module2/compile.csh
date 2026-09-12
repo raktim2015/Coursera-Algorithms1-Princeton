@@ -1,2 +1,2 @@
-javac -cp algs4.jar percolation.java
-java -cp .:algs4.jar Main
+javac -cp algs4.jar Percolation.java
+java -cp .:algs4.jar Percolation
