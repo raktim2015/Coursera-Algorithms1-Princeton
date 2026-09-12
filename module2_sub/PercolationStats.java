@@ -2,8 +2,6 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
-import java.util.*;
-
 public class PercolationStats {
 
     private Percolation percolation[];
@@ -48,30 +46,10 @@ public class PercolationStats {
     {
       return (m_mean + (1.96*m_stddev)/Math.sqrt(m_trials));
     }
-    /*private void collectStats()
-    {
-      for (int i=0;i<m_trials;i++) {
-        percolation_threshold[i] = percolation[i].launch(m_n);
-      }
-      mean();
-      stddev();
-      double low = confidenceLo();
-      double high = confidenceHi(); 
-      System.out.println("Mean : " + m_mean);
-      System.out.println("Stddev : " + m_stddev);
-      System.out.println("95% confidence interval : " + low + ", " + high);
-    }*/
-
+   
     // test client (see below)
     public static void main(String[] args)
     {
-      int n = 20;
-      int trials = 100;
-      if (args.length == 2) {
-        n = Integer.parseInt(args[0]);
-        trials = Integer.parseInt(args[1]);
-      }
-      //PercolationStats obj = new PercolationStats(n, trials);
-      //obj.collectStats();
+
     }
 }

@@ -29,11 +29,11 @@ public class Percolation {
       this.m_uf = new WeightedQuickUnionUF(n*n);
       this.firstRow = new int[n];
     }
-    public boolean validCell(int row, int col)
+    private boolean validCell(int row, int col)
     {
       return ((row>=0) && (row<m_n) && (col>=0) && (col<m_n));
     }
-    public int index(int row, int col)
+    private int index(int row, int col)
     {
       return (row*m_n + col);
     }
@@ -103,7 +103,7 @@ public class Percolation {
       return m_percolates;
     }
     
-    public double launch(int n)
+    /*private double launch(int n)
     {
       System.out.println("Grid : " + n + "x" + n);
       while (!percolates()) {
@@ -120,7 +120,7 @@ public class Percolation {
       double percolationThreshold = (sitesOpened*1.0) / ((n*n)*1.0);
       System.out.println("Percolation threshold = " + percolationThreshold);
       return percolationThreshold;
-    }
+    }*/
 
     // test client (optional)
     public static void main(String[] args)
